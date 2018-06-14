@@ -96,7 +96,8 @@ exports.sendConfirmation = (req, res, next) => {
 		}
 
 		if (response.statusCode >= 200 && response.statusCode < 300) {
-			res.sendFile(path.join(__dirname, '../static/check-inbox.html'));
+                        res.sendFile('https://teah.weboperative.com/foobar.html');
+			//res.sendFile(path.join(__dirname, '../static/check-inbox.html'));
 		} else {
 			res.sendFile(path.join(__dirname, '../static/error.html'));
 		}
