@@ -25,7 +25,8 @@ function prepareConfirmationEmail(reqBody) {
 	      	time_sent: String(Date.now()),
 	      },
 	      substitutions: {
-	      	link_insert: link
+	      	link_insert: link,
+                first_name: reqBody.first_name
 	      }
 	    },
 	  ],
