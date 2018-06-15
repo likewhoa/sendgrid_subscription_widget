@@ -96,7 +96,7 @@ exports.sendConfirmation = (req, res, next) => {
 		}
 
 		if (response.statusCode >= 200 && response.statusCode < 300) {
-                        window.location.replace("https://teah.weboperative.com");
+                        res.sendFile('/home/teah/htdocs/index.html');
 			//res.sendFile(path.join(__dirname, '../static/check-inbox.html'));
 		} else {
 			res.sendFile(path.join(__dirname, '../static/error.html'));
