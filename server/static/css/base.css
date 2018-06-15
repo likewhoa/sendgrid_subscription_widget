@@ -1,0 +1,75 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,h1,p {
+    padding: 0;
+    margin: 0;
+}
+body{
+  font-family: "CircularStd-Bold", "Lucida Grande", "Lucida Sans Unicode", arial,helvetica;
+}
+@font-face {
+  font-family: 'CircularStd-Bold';
+  src: url('../fonts/CircularStd-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal
+}
+
+/* Common styles
+* --------------------------------------- */
+h1{
+  font-size: 2rem;
+  color: #444;
+  font-family: "CircularStd-Bold", "SharpSansNo1", arial,helvetica;
+  margin: 0;
+  padding: 0
+}
+p{ font-size: 2em }
+#section { background-size: cover }
+
+/* Section 0
+* --------------------------------------- */
+#section0 h1{
+  transform: translateY(-10%);
+  position: relative
+}
+
+#section0{
+  padding: 6% 0 0 0;
+  background-image: url(../imgs/bg3.jpg)
+}
+#section0 h1 { color: white }
+#section0 p {
+  font-size: 3em;
+  color: white
+}
+.section{
+  text-align:center;
+  overflow: hidden
+}
+#header{
+  position:fixed;
+  display:block;
+  width: 85%;
+  z-index:9;
+  text-align:left;
+  color: #f2f2f2;
+  padding: 20px 0 0 15%;
+}
+#header{
+  top:0px;
+  background: rgba(0, 0, 0, 0.7) /* black transparent */
+}
+.logo img{
+  position: relative;
+  top: -10px;
+  width: 30%;
+  max-width: 100%
+}
+.contact {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  font-size: 1.5em
+}
+.contact a { color: #6ed25a }
